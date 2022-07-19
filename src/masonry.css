@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+}
+main {
+  width: 100%;
+  height: 150px;
+  background-color: gray;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+
+  background-color: rgb(255, 255, 255);
+}
+
+/* .container .column {
+  outline: black 2px solid;
+} */
+
+.container .item {
+  /* border-radius: 10px; */
+  top: 0;
+  left: 0;
+  transition-duration: 800ms;
+  /* transition-timing-function: cubic-bezier(0.24, 1.03, 0.68, 1); */
+  /* box-shadow: 0 0 0 3px white; */
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.dummybox {
+  height: 50px;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pintrestCard > img {
+  border-radius: 10px;
+}
+.pintrestCard .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5%;
+}
+.pintrestCard .pfp {
+  width: 3em;
+  border-radius: 50%;
+}
+.pintrestCard .username {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.pintrestCard .titleWrap {
+  height: 50px;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  max-width: 100%;
+  overflow: hidden;
+  word-break: break-word;
+}
+.pintrestCard .title {
+  font-size: 1rem;
+  font-weight: 700;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  max-width: 100%;
+  overflow: hidden;
+  word-break: break-word;
+  word-wrap: break-word;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+}
