@@ -63,9 +63,7 @@ const imagesDB = [
 function App() {
   const renderTimes = useRef(1);
   const [imgs, setImgs] = useState(imagesDB);
-  const [dummyBoxes, setDummyBoxes] = useState([]);
   useEffect(() => {
-    // console.log("container Renders", renderTimes.current);
     renderTimes.current += 1;
   });
 
@@ -107,7 +105,11 @@ function App() {
                   </div>
                 </div>
                 <div className="profile">
-                  <img className="pfp" src="https://picsum.photos/50" alt="" />
+                  <img
+                    className="pfp"
+                    src="https://picsum.photos/50"
+                    alt="pfp"
+                  />
                   <span className="username">
                     <a href="#">Username</a>
                   </span>
