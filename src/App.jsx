@@ -35,25 +35,25 @@ const imagesDB = [
     height: 400,
   },
   {
-    id: 4,
+    id: 5,
     src: "https://picsum.photos/200/400",
     width: 200,
     height: 400,
   },
   {
-    id: 4,
+    id: 6,
     src: "https://picsum.photos/200/400",
     width: 200,
     height: 200,
   },
   {
-    id: 4,
+    id: 7,
     src: "https://picsum.photos/200/400",
     width: 200,
     height: 290,
   },
   {
-    id: 4,
+    id: 8,
     src: "https://picsum.photos/200/400",
     width: 200,
     height: 350,
@@ -85,13 +85,9 @@ function App() {
     setImgs((imgs) => [...imgs, newImg]);
   };
 
-  const addDummyBox = () => {
-    setDummyBoxes((dummyBoxes) => [...dummyBoxes, "yaay"]);
-  };
-
   return (
     <main>
-      <button onClick={addRandomImage}>Click me</button>
+      <button onClick={addRandomImage}>Add Image</button>
       <div>{`number of images ${imgs.length}`}</div>
       <MasonryContainer
         centerItems={true}
@@ -100,13 +96,6 @@ function App() {
         verticalGap={15} // could be a string to specify the unit
         horizontalGap={15} // could be a string to specify the unit
       >
-        <Item>
-          <button onClick={addDummyBox}>CLick me</button>
-          {dummyBoxes.map((box) => (
-            <div className="dummybox">{box}</div>
-          ))}
-        </Item>
-
         {imgs.map((img, index) => (
           <Item key={index}>
             <div className="pintrestCard">
@@ -118,13 +107,9 @@ function App() {
                   </div>
                 </div>
                 <div className="profile">
-                  <img
-                    className="pfp"
-                    src="https://i.pinimg.com/75x75_RS/8b/a3/07/8ba307ed5894660deb3e6c58458eab2f.jpg"
-                    alt=""
-                  />
+                  <img className="pfp" src="https://picsum.photos/50" alt="" />
                   <span className="username">
-                    <a href="#">Anee ane</a>
+                    <a href="#">Username</a>
                   </span>
                 </div>
               </div>
