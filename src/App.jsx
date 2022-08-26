@@ -16,48 +16,6 @@ const imagesDB = [
     width: 200,
     height: 200,
   },
-  {
-    id: 2,
-    src: "https://picsum.photos/200/50",
-    width: 200,
-    height: 250,
-  },
-  {
-    id: 3,
-    src: "https://picsum.photos/200/320",
-    width: 200,
-    height: 320,
-  },
-  {
-    id: 4,
-    src: "https://picsum.photos/200/400",
-    width: 200,
-    height: 400,
-  },
-  {
-    id: 5,
-    src: "https://picsum.photos/200/400",
-    width: 200,
-    height: 400,
-  },
-  {
-    id: 6,
-    src: "https://picsum.photos/200/400",
-    width: 200,
-    height: 200,
-  },
-  {
-    id: 7,
-    src: "https://picsum.photos/200/400",
-    width: 200,
-    height: 290,
-  },
-  {
-    id: 8,
-    src: "https://picsum.photos/200/400",
-    width: 200,
-    height: 350,
-  },
 ];
 
 function App() {
@@ -72,7 +30,7 @@ function App() {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
   const addRandomImage = () => {
-    const height = randomIntFromInterval(200, 450);
+    const height = randomIntFromInterval(100, 300);
     const newImg = {
       id: imgs.length,
       src: `https://picsum.photos/200/${height}`,
